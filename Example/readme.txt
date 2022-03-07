@@ -7,7 +7,7 @@ Only SPI interface available.
 
 How to use :
 1. Declare ICM42688 class (set SPI freq and chip select pin) :
-    ICM42688(int freq, int cs);
+    ICM42688(int freq, int cs); //Although datasheet mentions that the IMU works up to 20Mhz, for me the SPI communications only works up to 6Mhz.
 
 
 2. Initialize IMU and set offset :
