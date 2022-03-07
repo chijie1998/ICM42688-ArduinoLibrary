@@ -36,3 +36,7 @@ Modify Kalman Filter from [Osoyoo](https://github.com/osoyoo/Osoyoo-development-
 ![alt text](docs/images/function.jpg)
 
 You may refer to the Example and readme on how to call and use the functions.
+
+librarytest.ino demonstrates on how to use the basic functions to initialize and get gyro and accel data to compute tilted angle using Kalman Filter. 
+
+IMUandKalman.ino demonstrated on how to use interrupt in Teensy to get IMU data every 50ms and print on serial monitor. 
