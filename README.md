@@ -3,6 +3,8 @@
 
 Just a casual Arduino IDE library for 6 DOF IMU, ICM42688.
 
+[A demonstration video](https://youtu.be/w1J-e4xd44Y).
+
 This device is relatively new and I could not find any existing arduino library from the internet, hence decided to write it myself as a part of my project needs this IMU to work with Teensy 4.1 using Arduino IDE.
 ![alt text](docs/images/spi.jpg)
 
@@ -11,8 +13,6 @@ This library only provides basic functions such as initialize IMU, get temperatu
 This library provides fixed initialization during device start up ( Accel config 2G 100Hz, Gyro 31.25dps 100Hz ). You may need to change the code in the function of defaultinit_imu() and get_MGDPSdata() in ICM42688.cpp for the scale that you desired. 
 
 On the side notes, only SPI connection is supported for this library.
-
-### Demonstration Video
 
 ### Wiring with Teensy 4.1 
 ![alt text](docs/images/wiring.jpg)
