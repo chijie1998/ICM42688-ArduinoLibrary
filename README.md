@@ -31,3 +31,8 @@ Modify Kalman Filter from [Osoyoo](https://github.com/osoyoo/Osoyoo-development-
 3. Open Arduino IDE, select Sketch and include libraries. You should be able to see and choose ICM42688 and KalmanFilter.
 
 4. You may follow the guide from [Arduino](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries) too if step 2 and 3 does not work for you.
+
+### Available Functions 
+![alt text](docs/images/function.jpg)
+
+You may refer to the Example and readme on how to call and use the functions.
