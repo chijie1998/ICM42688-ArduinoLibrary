@@ -3,7 +3,7 @@
 
 Just a casual Arduino IDE library for 6 DOF IMU, ICM42688.
 
-This device is relatively new and I could not find any existing arduino library from the internet, hence decided to write it myself as a part of my project needed this IMU to work with Teensy 4.1 using Arduino IDE.
+This device is relatively new and I could not find any existing arduino library from the internet, hence decided to write it myself as a part of my project needs this IMU to work with Teensy 4.1 using Arduino IDE.
 ![alt text](docs/images/spi.jpg)
 
 ### Important Notes
@@ -40,3 +40,11 @@ You may refer to the Example and readme on how to call and use the functions.
 librarytest.ino demonstrates on how to use the basic functions to initialize and get gyro and accel data to compute tilted angle using Kalman Filter. 
 
 IMUandKalman.ino demonstrated on how to use interrupt in Teensy to get IMU data every 50ms and print on serial monitor. 
+
+### Credit and References
+
+[ICM42688 datasheet](https://datasheet.octopart.com/ICM-42688-P-InvenSense-datasheet-140604332.pdf)
+
+[Mikroe Libraries](https://www.mikroe.com/6dof-imu-14-click)
+
+[ICM20948 Arduino Libraries](https://github.com/dtornqvist/icm-20948-arduino-library)
