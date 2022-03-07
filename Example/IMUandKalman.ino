@@ -2,7 +2,7 @@
 #include <ICM42688.h>
 #include <SPI.h>
 #define HW_TIMER_INTERVAL_US    5000L
-ICM42688 icm(6000000,10);
+ICM42688 icm(6000000,10);// define frequency and CS pin
 uint8_t buf = 0x00;
 int x=0;
 float temperature;
@@ -41,7 +41,6 @@ void TimerHandler()
 
 void setup() {
   // put your setup code here, to run once:
-  //pinMode(LED_BUILTIN, OUTPUT);
   SPI.begin(); 
   Serial.begin(115200);
   while (!Serial && millis() < 15000);        
@@ -59,60 +58,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  //if (x < 2){
-  //icm.get_data(&accel,&gyro);
-//  icm.get_temperature(&temperature);
-//  icm.get_MGDPSdata(&accelf,&gyrof);
-//  kalmanfilter.Angletest(accel.x, accel.y, accel.z, gyro.x, gyro.y, gyro.z, dt, Q_angle, Q_gyro, R_angle, C_0, K1);
-//  angleoutput=kp * (kalmanfilter.angle + angle0) + kd * kalmanfilter.Gyro_x;//PD angle control
-//  Serial.print(" Accel X:");
-//  Serial.print(accel.x, DEC);
-//  Serial.print(" Accel Y:");
-//  Serial.print(accel.y, DEC);
-//  Serial.print(" Accel Z:");
-//  Serial.println(accel.z, DEC);
-//  Serial.print(" Gyro X:");
-//  Serial.print(gyro.x, DEC);
-//  Serial.print(" Gyro Y:");
-//  Serial.print(gyro.y, DEC);
-//  Serial.print(" Gyro Z:");
-//  Serial.println(gyro.z, DEC);
-//  Serial.print(" Temperature:");
-//  Serial.println(temperature, DEC);
-//  Serial.print(" Accel X:");
-//  Serial.print(accelf.x, DEC);
-//  Serial.print(" Accel Y:");
-//  Serial.print(accelf.y, DEC);
-//  Serial.print(" Accel Z:");
-//  Serial.println(accelf.z, DEC);
-//  Serial.print(" Gyro X:");
-//  Serial.print(gyrof.x, DEC);
-//  Serial.print(" Gyro Y:");
-//  Serial.print(gyrof.y, DEC);
-//  Serial.print(" Gyro Z:");
-//  Serial.println(gyrof.z, DEC);
-//  Serial.print(" Angle by accel:");
-//  Serial.println(kalmanfilter.Angle, DEC);
-//  Serial.print(" Angle:");
-//  Serial.println(kalmanfilter.angle, DEC);
-//  Serial.print(" Angle output for PID control:");
-//  Serial.println(angleoutput, DEC);
-//  Serial.print("----------------------------------\r\n");
-//  delay(1000);
-//  x++;
-//  }
-//simpleTimer.run();
-//  static unsigned long lastTimer0   = 0;
-//  //static bool timer0Stopped         = false;
-//  static unsigned long currTime     = 0;;
-//
-//  currTime = millis();
-//   
-//  if (currTime - lastTimer0 > 500)
-//  {
-//    lastTimer0 = currTime;
-// if (sincePrint > 10){
 noInterrupts();
 if (sincePrint > 250){
   Serial.print(" Accel X:");
