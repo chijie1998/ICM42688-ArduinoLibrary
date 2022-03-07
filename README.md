@@ -19,3 +19,6 @@ On the side notes, only SPI connection is supported for this library.
 Please refer to connection of Teensy 4.1, just connect the wires according to your microcontroller SPI pins. 
 
 Please becareful of the voltage if you are using Arduino Uno, you need to step down the voltage on the SPI lines and input voltage to 3.3V as the IMU is running at 3.3V. 
+
+### Kalman Filter
+Modify Kalman Filter from [Osoyoo](https://github.com/osoyoo/Osoyoo-development-kits/tree/master/OSOYOO%202WD%20Balance%20Car%20Robot) to be compatible with this library to obtain tilted angle from IMU data. 
