@@ -12,6 +12,8 @@ This library provides fixed initialization during device start up ( Accel config
 
 On the side notes, only SPI connection is supported for this library.
 
+### Demonstration Video
+
 ### Wiring with Teensy 4.1 
 ![alt text](docs/images/wiring.jpg)
           
