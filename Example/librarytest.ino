@@ -2,6 +2,7 @@
 #include <ICM42688.h>
 #include <SPI.h>
 float temperature;
+ICM42688 icm(6000000,10); // define frequency and CS pin
 ICM42688_axis_t accel;
 ICM42688_axis_t gyro;
 ICM42688_axis_f accelf;
