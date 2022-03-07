@@ -9,7 +9,7 @@ This library only provides basic functions such as initialize IMU, get temperatu
 This library provides fixed initialization during device start up ( Accel config 2G 100Hz, Gyro 31.25dps 100Hz ). You may need to change the code in the function of defaultinit_imu() and get_MGDPSdata() in ICM42688.cpp for the scale that you desired. On the side notes, only SPI connection is supported for this library.
 
 ### Wiring with Teensy 4.1 
-![alt text](docs/images/interface connection.png)
+
           
 ### Wiring with Arduino Uno or other microcontroller
 Please refer to connection of Teensy 4.1, just connect the wires according to your microcontroller SPI pins. Please becareful of the voltage if you are using Arduino Uno, you need to step down the voltage on the SPI lines and input voltage to 3.3V as the IMU is running at 3.3V. 
