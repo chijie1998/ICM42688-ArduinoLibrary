@@ -1,6 +1,8 @@
 # ICM42688-ArduinoLibrary
 ***Author:*** Sam Tan (chijie1998@hotmail.com)
+
 Just a casual Arduino IDE library for 6 DOF IMU, ICM42688.
+
 This device is relatively new and I could not find any existing arduino library from the internet, hence decided to write it myself as a part of my project needed this IMU to work with Teensy 4.1 using Arduino IDE.
 
 
