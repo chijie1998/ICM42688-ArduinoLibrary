@@ -2,7 +2,7 @@
 ***Author:*** Sam Tan (chijie1998@hotmail.com)
 Just a casual Arduino IDE library for 6 DOF IMU, ICM42688.
 This device is relatively new and I could not find any existing arduino library from the internet, hence decided to write it myself as a part of my project needed this IMU to work with Teensy 4.1 using Arduino IDE.
-![alt text](docs/images/spi.png)
+
 
 ### Important Notes
 This library only provides basic functions such as initialize IMU, get temperature, gyro and accel data, check and set offset which is sufficient for normal uses. 
